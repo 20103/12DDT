@@ -1,0 +1,75 @@
+body{
+    margin-top:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+
+.nav{
+    color:  black;
+    background-color: lightblue;
+    font-size: 15px;
+    font-weight: bold;
+    word-spacing: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: rgb(67, 67, 67);
+}
+
+#logo{
+    width: 200px;
+    height: 80px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+#main{
+    background-color: white;
+    width: 80%;
+    background-clip: content-box;
+    vertical-align: top;
+    margin: auto;
+}
+
+header {
+    padding-top: 10px;
+}
+
+.header button{
+    margin-right: 10px;
+    border-radius: 4px;
+    border-width: 1px;
+    opacity: 1;
+}
+
+.header button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer{
+    text-align: center;
+}
+
+.social img{
+    width: 20px;
+    height: 20px;
+}
+
+.info span{
+    border-radius: 4px;
+    background-color: rgb(67, 67, 67);
+}
