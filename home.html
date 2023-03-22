@@ -4,23 +4,30 @@
     <head>
         <title>My website</title>
         <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <!--Main-->
         <div id="main">
+            <!--Header content including top/navigation bar-->
             <header>
                 <div>
                     <div class="topbar">
                         <a href="./home.html"><img src="icon.PNG" alt="Logo" id="logo"></a>
                         <div style="float: right; display: flex; align-items: center;">
+                            <!--Donation button-->
                             <button style="background-color: yellow; font-weight: bolder; float:left; font-size: 40px;">DONATE</button>
+                            <!--Search bar-->
                             <form style="float:left;">
                                 <input type="text" placeholder="Search..." name="search">
                                 <button type="submit">Go!</button>
                             </form>
+                            <!--Sign in button-->
                             <button style="background-color: blue; color:white; height: 30px; width:80px; font-size:100%; font-weight: bold;">Sign in</button>
                         </div>
                     </div>
+                    <!--URL tags that lead to different categories-->
                     <nav>
                         <a href="./home.html">HOME</a>
                         <a href="./national.html">NATIONAL</a>
@@ -33,25 +40,48 @@
                     <hr>
                 </div>
             </header>
-            <section>
-                <div id="breaking">
-                    <a href="./local-man-saves-puppies-from-creepy-clowns.html" style="color:white; display:inline; font-size: 30px; font-weight: bold;">BREAKING NEWS: LOCAL MAN SAVES PUPPIES FROM CREEPY CLOWN</a>
-                    <button onClick="deleteObj()" style="width:40px; height:100%; float:right; background-color: rgb(236, 0, 0); color:white; font-size: 20px;">X</button>
-                    <script>
-                        var candidate = document.getElementById('breaking');
-                        function deleteObj(){
-                            candidate.remove();
-                        }
-                    </script>
-                </div>
-                <p>The fitness gram pacer test is a multi-stage aerobic capacity test</p>
-                <br><br><br><br><br><br><br><br><br><br><br><br>
-            </section>
+            <main>
+                <section>
+                    <!--Breaking news bar-->
+                    <div id="breaking">
+                        <span style="margin-left: 2px;"><a href="./paw-patrol-show-cancelled-in-north-korea.html" style="display:inline; font-size: 30px; font-weight: bold;">BREAKING NEWS: PAW PATROL SHOW CANCELLED IN NORTH KOREA</a></span>
+                        <button onClick="deleteObj()" style="width:40px; height:100%; float:right; background-color: rgb(236, 0, 0); color:white; font-size: 20px;">X</button>
+                        <script>
+                            var candidate = document.getElementById('breaking');
+                            function deleteObj(){
+                                candidate.remove();
+                            }
+                        </script>
+                    </div>
+                    <br>
+                    <!--News articles-->
+                    <div id="mainArticles">
+                        <div id="primaryArticle">
+                            <a href="./paw-patrol-show-cancelled-in-north-korea.html" style="position:relative; display:inline-block; width:100%; height:100%;">
+                                <div style="width:100%; height:100%;">
+                                    <img src="https://static.wikia.nocookie.net/paw-patrol/images/8/8d/PAW_Patrol_Korean_Title.png/revision/latest/" style="display:block; width:100%; height:100%;" alt="Paw patrol cancelled article image">
+                                </div>
+                                <div class="articleDescription">
+                                    <p id="topic">World</p>
+                                    <h1>Paw Patrol show cancelled in North Korea</h1>
+                                    <p id="date">1 April 7:49 PM</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="secondaryArticles">
+
+                        </div>
+                    </div>
+                    <p>The fitness gram pacer test is a multi-stage aerobic capacity test</p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                </section>
+            </main>
+            <!--Footer and information including social media-->
             <footer>
                 <hr>
                 <br>
                 <div class="info">
-                    <a href="./sponsers.html">Sponsers</a>
+                    <a href="./sponsors.html">Sponsors</a>
                     <a href="./contact.html" style="margin-left: 20px; margin-right: 20px;">Contact</a>
                     <a href="./about.html">About Us</a>
                 </div>
@@ -64,7 +94,7 @@
                 <br>
                 <a href="./home.html"><img src="icon.png" alt="Logo" style="width:100px; height:40px"></a>
                 <br><br>
-                <p style="padding-bottom: 10px; font-size: 10px;">Copyright ©2023 <a href="https://20103.github.io">20103.github.io</a>, Inc. All rights reserved.</p>
+                <p style="padding-bottom: 10px; font-size: 10px; margin:0;">Copyright ©2023 <a href="https://20103.github.io">20103.github.io</a>, Inc. All rights reserved.</p>
             </footer>
         </div>
     </body>
