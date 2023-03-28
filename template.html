@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>My website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--Main-->
+        <div id="main">
+            <!--Header content including top/navigation bar-->
+            <header>
+                <div>
+                    <div class="topbar">
+                        <div style="height:16vh;">
+                            <a href="./home.html"><img src="icon.PNG" alt="Logo" id="logo" width="100%" height="100%"></a>
+                            <div style="float: right; display: flex; align-items: center;">
+                                <!--Donation button-->
+                                <button style="background-color: yellow; font-weight: bolder; float:left; width:12vw; height:7vh; font-size:2.5vw;">DONATE</button>
+                                <!--Search bar-->
+                                <form style="float:left;">
+                                    <input type="text" placeholder="Search..." name="search">
+                                    <button type="submit">Go!</button>
+                                </form>
+                                <!--Sign in button-->
+                                <div id="login">
+                                    <a href="#">Sign in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--URL tags that lead to different categories-->
+                    <nav>
+                        <a href="./home.html">HOME</a>
+                        <a href="./national.html">NATIONAL</a>
+                        <a href="./world.html">WORLD</a>
+                        <a href="./politics">POLITICS</a>
+                        <a href="./entertainment">ENTERTAINMENT</a>
+                        <a href="./sports">SPORTS</a>
+                        <a href="./technology">TECHNOLOGY</a>
+                    </nav>
+                    <hr>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <!--Breaking news bar-->
+                    <div id="breaking">
+                        <span style="margin-left: 6px;"><a href="./paw-patrol-show-cancelled-in-north-korea.html" style="display:inline; font-size: 1.6vw; font-weight: bold;">BREAKING NEWS: PAW PATROL SHOW CANCELLED IN NORTH KOREA</a></span>
+                        <button onClick="deleteObj()" style="width:5vw; height:100%; float:right; background-color: rgb(236, 0, 0); color:white; font-size: 20px;">X</button>
+                        <script>
+                            var candidate = document.getElementById('breaking');
+                            function deleteObj(){
+                                candidate.remove();
+                            }
+                        </script>
+                    </div>
+                </section>
+            </main>
+            <!--Footer and information including social media-->
+            <footer>
+                <hr>
+                <br>
+                <div class="info">
+                    <a href="./sponsors.html">Sponsors</a>
+                    <a href="./contact.html" style="margin-left: 20px; margin-right: 20px;">Contact</a>
+                    <a href="./about.html">About Us</a>
+                </div>
+                <br>
+                <div class="social">
+                    <a href="https://twitter.com"><img src="https://i.pinimg.com/originals/4f/50/8c/4f508c71a45d9201f9e4a34e6ebedea0.png" alt="Twitter Icon"></a>
+                    <a href="https://facebook.com"><img src="https://www.svgrepo.com/show/176737/facebook-social-media.svg" alt="Facebook Icon" style="margin-left: 20px; margin-right: 20px;"></a>
+                    <a href="https://instagram.com"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-1024.png" alt="Instagram Icon"></a>
+                </div>
+                <br>
+                <a href="./home.html"><img src="icon.png" alt="Logo" width="100px" height="40px"></a>
+                <br><br>
+                <p style="padding-bottom: 10px; font-size: 10px; margin:0;">Copyright ©2023 <a href="https://20103.github.io">20103.github.io</a>, Inc. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
