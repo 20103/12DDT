@@ -24,7 +24,7 @@ nav{
     background-color: lightblue;
     font-size: 1.4vw;
     font-weight: bold;
-    word-spacing: 30px;
+    word-spacing: 2.2vw;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -109,7 +109,25 @@ footer{
 
 #primaryArticle{
     width: 70%;
-    height: 600px;
+}
+
+#primaryArticle h1{
+    margin-top: 0;
+    font-size: 4vw;
+    margin-bottom: 0;
+}
+
+#secondaryArticles{
+    width:70%;
+}
+
+#secondaryArticles h1{
+    margin:0;
+    font-size: 1.5vw;
+}
+
+#articleMargin{
+    margin-top: 2vw;
 }
 
 #topic{
@@ -123,12 +141,6 @@ footer{
 #date{
     color:#828482;
     font-size: 1vw;
-}
-
-.articleDescription h1{
-    margin-top: 0;
-    font-size: 4vw;
-    margin-bottom: 0;
 }
 
 .articleDescription{
@@ -155,4 +167,26 @@ a:hover > .articleDescription h1,
 img{
     max-width: 100%;
     max-height: 100%;
+}
+
+#login{
+    background-color: blue; 
+    color:white; 
+    height: 30px; 
+    width:80px; 
+    font-size:100%; 
+    font-weight: bold; 
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#login a{
+    color:white; 
+    height: 30px; 
+    width:80px; 
+    font-size:100%; 
+    font-weight: bold; 
+    display: block; 
+    line-height: 30px; 
+    text-align: center;
 }
