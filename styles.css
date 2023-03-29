@@ -118,16 +118,20 @@ footer{
 }
 
 #secondaryArticles{
-    width:70%;
+    display: flex;
+    justify-content: space-between;
 }
+
+#secondaryArticles > a {
+    flex: 1;
+    margin-top:10px;
+    margin-right: 10px;
+  }
 
 #secondaryArticles h1{
     margin:0;
     font-size: 1.5vw;
-}
-
-#articleMargin{
-    margin-top: 2vw;
+    width:auto;
 }
 
 #topic{
@@ -141,6 +145,21 @@ footer{
 #date{
     color:#828482;
     font-size: 1vw;
+    font-weight: bold;
+}
+
+.articleTopic{
+    color: #FF2B56;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: 'Nunito';
+}
+
+.articleDate{
+    color:#828482;
+    font-size: 0.8vw;
+    font-weight: bold;
 }
 
 .articleDescription{
@@ -189,4 +208,36 @@ img{
     display: block; 
     line-height: 30px; 
     text-align: center;
+}
+
+.articleHeader{
+    width: 70%;
+}
+
+.articleName{
+    font-size: 4.3vw;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article p{
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vw;
+}
+
+.mainContent{
+    width: 70%;
+    margin-left: 20px;
+}
+
+.articleImage{
+    width: 100%;
+    margin-left: 0;
+}
+
+.imageCaption{
+    margin-bottom: 30px;
+    font-size: 0.8vw;
+    color: #828482;
 }
