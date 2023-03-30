@@ -21,7 +21,7 @@ a:visited{
 
 nav{
     color:  black;
-    background-color: lightblue;
+    background-color: #bbbbbb;
     font-size: 1.4vw;
     font-weight: bold;
     word-spacing: 2.2vw;
@@ -35,10 +35,10 @@ a:hover{
 }
 
 #logo{
-    width: 12vw;
-    height: 6vh;
+    height: 12vh;
     margin-bottom: 20px;
     margin-left: 20px;
+    float: left;
 }
 
 #main{
@@ -56,8 +56,8 @@ header {
 
 button{
     opacity: 1;
-    border-width: 1px;
     font-size: 100%;
+    border-width: 0;
 }
 
 
@@ -97,10 +97,6 @@ footer{
     display:flex;
     align-items:center;
     justify-content: space-between;
-}
-
-#breaking > button{
-    border-width:0;
 }
 
 #mainArticles{
@@ -241,3 +237,9 @@ article p{
     font-size: 0.8vw;
     color: #828482;
 }
+
+#footerLogo{
+    height: 6vh;
+}
+
+/* my code has been inconsistent, might clean up later
