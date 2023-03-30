@@ -2,13 +2,13 @@
 
 <html lang="en">
     <head>
-        <title>My website</title>
+        <title>Home</title>
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
             function userWarning(){
-                alert("IMPORTANT! This website is intended for satirical purposes only. The content presented on this site is not to be taken seriously or as a factual representation of events. Any similarities between the characters or events depicted on this site and real-life individuals or situations are purely coincidental. All articles were written by ChatGPT and edited by me.");
+                alert("IMPORTANT! This website is incomplete and intended for satirical purposes only. The content presented on this site is not to be taken seriously or as a factual representation of events. Any similarities between the characters or events depicted on this site and real-life individuals or situations are purely coincidental. All articles were written by ChatGPT and edited by me.");
             }
             window.onload = userWarning;
         </script>
@@ -21,7 +21,9 @@
                 <div>
                     <div class="topbar">
                         <div style="height:16vh;">
-                            <a href="./home.html"><img src="icon.PNG" alt="Logo" id="logo" width="100%" height="100%"></a>
+                            <div id="logo">
+                                <a href="./home.html"><img src="icon.PNG" alt="Logo" style="max-width: 100%; max-height: 100%;"></a>
+                            </div>
                             <div style="float: right; display: flex; align-items: center;">
                                 <!--Donation button-->
                                 <button style="background-color: yellow; font-weight: bolder; float:left; width:12vw; height:7vh; font-size:2.5vw;">DONATE</button>
@@ -106,6 +108,7 @@
             <!--Footer and information including social media-->
             <footer>
                 <hr>
+                <!--Using line break tags is bad practice, but I'm running low on time-->
                 <br>
                 <div class="info">
                     <a href="./sponsors.html">Sponsors</a>
@@ -114,12 +117,14 @@
                 </div>
                 <br>
                 <div class="social">
-                    <a href="https://twitter.com"><img src="https://i.pinimg.com/originals/4f/50/8c/4f508c71a45d9201f9e4a34e6ebedea0.png" alt="Twitter Icon"></a>
-                    <a href="https://facebook.com"><img src="https://www.svgrepo.com/show/176737/facebook-social-media.svg" alt="Facebook Icon" style="margin-left: 20px; margin-right: 20px;"></a>
-                    <a href="https://instagram.com"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-1024.png" alt="Instagram Icon"></a>
+                    <a href="https://twitter.com/TheJesterTimes"><img src="https://i.pinimg.com/originals/4f/50/8c/4f508c71a45d9201f9e4a34e6ebedea0.png" alt="Twitter Icon"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100089915727695"><img src="https://www.svgrepo.com/show/176737/facebook-social-media.svg" alt="Facebook Icon" style="margin-left: 20px; margin-right: 20px;"></a>
+                    <a href="https://www.instagram.com/thejestertimes/"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-1024.png" alt="Instagram Icon"></a>
                 </div>
                 <br>
-                <a href="./home.html"><img src="icon.png" alt="Logo" width="100px" height="40px"></a>
+                <div id="footerLogo">
+                    <a href="./home.html"><img src="icon.PNG" alt="Logo" style="max-width: 100%; max-height: 100%;"></a>
+                </div>
                 <br><br>
                 <p style="padding-bottom: 10px; font-size: 10px; margin:0;">Copyright ©2023 <a href="https://20103.github.io">20103.github.io</a>, Inc. All rights reserved.</p>
             </footer>
